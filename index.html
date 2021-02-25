@@ -27,6 +27,9 @@
   }
 </style>
 
+
+<!--Look at this for more video controls https://stackoverflow.com/questions/45176258/play-video-onenter-aframe -->
+
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
@@ -53,6 +56,12 @@
         position="0 0 0"
       >
       </a-entity>
+
+      <a-assets >
+        <video id="myvideo" src="https://ipfs.kevaid.com/QmX2vpMqfGc8LRgRmMmaZ1wwkTEEDT6BqQP2WYPQpCNBQy.mp4"></video>
+      </a-assets>
+    <a-plane material="src:#myvideo" video-handler></a-plane>
+
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
